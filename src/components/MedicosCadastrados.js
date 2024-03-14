@@ -99,11 +99,11 @@ const MedicosCadastrados = () => {
                   <span>{`${selectedRows.length} selecionado${selectedRows.length > 1 ? 's' : ''}`}</span>
                 )}
               </TableCell>
-              <TableCell>ID</TableCell>
+             
               <TableCell>Nome</TableCell>
               <TableCell>Especialidade</TableCell>
               <TableCell>CRM</TableCell>
-              <TableCell>Estado do CRM</TableCell>
+              <TableCell>Estado CRM</TableCell>
               <TableCell>Contato</TableCell>
               <TableCell>CPF</TableCell>
               <TableCell>Descrição</TableCell>
@@ -122,7 +122,6 @@ const MedicosCadastrados = () => {
                       onChange={() => handleCheckboxChange(medico.id)}
                     />
                   </TableCell>
-                  <TableCell>{medico.id}</TableCell>
                   <TableCell>{medico.nome}</TableCell>
                   <TableCell>{medico.especialidade}</TableCell>
                   <TableCell>{medico.crm}</TableCell>
