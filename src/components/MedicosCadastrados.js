@@ -82,7 +82,7 @@ const MedicosCadastrados = () => {
   const handleDeleteSelected = () => {
     setMedicos((prevMedicos) => prevMedicos.filter((medico) => !selectedRows.includes(medico.id)));
     setSelectedRows([]);
-    setSelectAll(false); // Desmarcar a opção "Selecionar Todos"
+    setSelectAll(false); 
   };
 
   return (
