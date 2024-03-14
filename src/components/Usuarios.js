@@ -113,7 +113,7 @@ const Usuarios = () => {
   };  
 
   return (
-    <Grid container spacing={2}  justifyContent="center" alignItems="center" height="100vh"  marginLeft={7}>
+    <Grid container spacing={2}  justifyContent="center" alignItems="center" height="100vh"  marginLeft={2.5}>
       <Grid item xs={25}>
         <TableContainer component={Paper}>
           <Table>
