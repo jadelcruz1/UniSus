@@ -113,7 +113,7 @@ const Usuarios = () => {
   };  
 
   return (
-    <Grid container spacing={2}  justifyContent="center" alignItems="center" height="100vh"  marginLeft={2.5}>
+    <Grid container spacing={2}  justifyContent="center" alignItems="center" height="100vh"  marginLeft={3}>
       <Grid item xs={25}>
         <TableContainer component={Paper}>
           <Table>
@@ -162,8 +162,8 @@ const Usuarios = () => {
                         onClick={(event) => handleCheckboxClick(event, row.id)}
                       />
                     </TableCell>
-                    <TableCell />
-                     <TableCell>{row.name}</TableCell>
+                    <TableCell />                   
+                    <TableCell>{row.name}</TableCell>
                     <TableCell>{row.age}</TableCell>
                     <TableCell>{row.city}</TableCell>
                     <TableCell>{row.phone}</TableCell>                    
