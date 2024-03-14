@@ -35,6 +35,30 @@ const CadastroMedico = ({ onSubmit }) => {
     setFoto('');
   };
 
+  const handleCadastroMedico = () => {
+    const novoCadastro = {
+      nome,
+      especialidade,
+      crm,
+      estadoCRM,
+      contato,
+      cpf,
+      descricao,
+      foto,
+    };
+    onSubmit(novoCadastro);
+    // Limpar os campos após o envio
+    
+    setNome('');
+    setEspecialidade('');
+    setCRM('');
+    setEstadoCRM('');
+    setContato('');
+    setCPF('');
+    setDescricao('');
+    setFoto('');
+  };
+
   return (
     <Box>
       <Typography variant="h5" gutterBottom>
@@ -117,7 +141,13 @@ const CadastroMedico = ({ onSubmit }) => {
             />
           </Grid>
           <Grid item xs={12}>
-          <Button variant="contained" color="secondary" type="submit"  style={{ backgroundColor: '#92eea3', color: '#151414'}}>
+            <Button
+              variant="contained"
+              color="secondary"
+              type="button"
+              onClick={handleCadastroMedico}
+              style={{ backgroundColor: '#92eea3', color: '#151414' }}
+            >
               Cadastrar
             </Button>
           </Grid>

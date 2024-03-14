@@ -11,6 +11,7 @@ import Dashboard from './pages/Dashboard';
 import Profile from './pages/Profile';
 import Cadastro from './components/Cadastro';
 import CadastroMedico from './components/CadastroMedico';
+import MedicosCadastrados from './components/MedicosCadastrados';
 
 const App = () => {
   return (
@@ -23,6 +24,8 @@ const App = () => {
             <Route path="/profile" element={<Profile />} />
             <Route path="/cadastro" element={<Cadastro />} />
             <Route path="/CadastroMedico" element={<CadastroMedico />} />
+            <Route path="/medicosCadastrados" element={<MedicosCadastrados />} />
+            
             {/* Adicione outras rotas conforme necessário */}
           </Routes>
         </div>

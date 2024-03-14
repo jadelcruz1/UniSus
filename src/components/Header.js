@@ -24,6 +24,10 @@ const Header = () => {
             <li>
               <Link to="/profile">Usuários Cadastrados</Link>
             </li>   
+            <li>
+              <Link to="/medicosCadastrados">Médicos Cadastrados</Link>
+            </li>   
+
           
           </ul>
         </nav>

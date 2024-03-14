@@ -137,8 +137,7 @@ const Usuarios = () => {
                       </Tooltip>
                     </React.Fragment>
                   )}
-                </TableCell>
-                <TableCell>ID</TableCell>
+                </TableCell>                
                 <TableCell>Nome</TableCell>
                 <TableCell>Idade</TableCell>
                 <TableCell>Cidade</TableCell>
@@ -164,8 +163,7 @@ const Usuarios = () => {
                       />
                     </TableCell>
                     <TableCell />
-                    <TableCell>{row.id}</TableCell>
-                    <TableCell>{row.name}</TableCell>
+                     <TableCell>{row.name}</TableCell>
                     <TableCell>{row.age}</TableCell>
                     <TableCell>{row.city}</TableCell>
                     <TableCell>{row.phone}</TableCell>                    
