@@ -37,7 +37,7 @@ const MedicosCadastrados = () => {
   ]);
 
   const [selectedRows, setSelectedRows] = useState([]);
-  const [selectAll, setSelectAll] = useState(false); // Estado para controlar a seleção de todos os checkbox
+  const [selectAll, setSelectAll] = useState(false); 
   const [page, setPage] = useState(0);
   const [rowsPerPage, setRowsPerPage] = useState(5);
 
