@@ -24,9 +24,7 @@ const App = () => {
             <Route path="/profile" element={<Profile />} />
             <Route path="/cadastro" element={<Cadastro />} />
             <Route path="/CadastroMedico" element={<CadastroMedico />} />
-            <Route path="/medicosCadastrados" element={<MedicosCadastrados />} />
-            
-            {/* Adicione outras rotas conforme necessário */}
+            <Route path="/medicosCadastrados" element={<MedicosCadastrados />} />    
           </Routes>
         </div>
       </div>
