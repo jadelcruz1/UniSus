@@ -1,7 +1,7 @@
 /* Header.css */
 .header {
     background-color: #92eea3;
-    color: #fff;
+    color: black;
     padding: 10px 0;
   }
   
@@ -12,7 +12,7 @@
   }
   
   .logo a {
-    color: #fff;
+    color: #151414;
     text-decoration: none;
     font-size: 1.5rem;
   }
@@ -33,7 +33,7 @@
   }
   
   .nav ul li a {
-    color: #fff;
+    color: #151414;
     text-decoration: none;
   }
   

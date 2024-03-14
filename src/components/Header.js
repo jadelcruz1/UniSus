@@ -1,7 +1,7 @@
 // Header.js
 import React from 'react';
 import { Link } from 'react-router-dom';
-import './Header.css'; // Arquivo de estilos
+import './Header.css'; 
 
 const Header = () => {
   return (
@@ -20,9 +20,8 @@ const Header = () => {
             </li>
             <li>
               <Link to="/profile">Perfil</Link>
-            </li>
-           
-            {/* Adicione outros itens de menu conforme necessário */}
+            </li>   
+          
           </ul>
         </nav>
       </div>

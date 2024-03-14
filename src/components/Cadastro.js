@@ -121,7 +121,7 @@ const Cadastro = ({ onSubmit }) => {
             />
           </Grid>
           <Grid item xs={12}>
-            <Button variant="contained" color="primary" type="submit">
+            <Button variant="contained" color="secondary" type="submit"  style={{ backgroundColor: '#92eea3', color: '#151414'}}>
               Cadastrar
             </Button>
           </Grid>
