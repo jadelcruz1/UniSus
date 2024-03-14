@@ -19,7 +19,10 @@ const Header = () => {
               <Link to="/cadastro">Cadastro Paciente</Link>
             </li>
             <li>
-              <Link to="/profile">Perfil</Link>
+              <Link to="/CadastroMedico">Cadastro Médicos</Link>
+            </li>
+            <li>
+              <Link to="/profile">Usuários Cadastrados</Link>
             </li>   
           
           </ul>

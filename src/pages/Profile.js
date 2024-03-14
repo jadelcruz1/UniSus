@@ -3,7 +3,8 @@ import Usuarios from '../components/Usuarios';
 
 const Profile = () => {
   return (
-    <div>      
+    <div>     
+      <h1> Usuários Cadastrados</h1> 
       <Usuarios />
     </div>
   );
