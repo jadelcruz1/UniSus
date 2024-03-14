@@ -54,9 +54,24 @@ const StyledInputBase = styled(InputBase)(({ theme }) => ({
 
 export default function SearchAppBar() {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
+  const [searchTerm, setSearchTerm] = React.useState('');
 
   const handleMenuItemClick = () => {
     setIsMenuOpen(false);
+  };
+
+  const handleSearch = (event) => {
+    setSearchTerm(event.target.value);
+    // Aqui você pode adicionar a lógica para realizar a pesquisa com o termo digitado
+    console.log('Pesquisando por:', event.target.value);
+    // Chamar a função de pesquisa com o termo atualizado
+    realizarPesquisa(event.target.value);
+  };
+
+  // Função de exemplo para realizar a pesquisa
+  const realizarPesquisa = (termoPesquisa) => {
+    // Implementar lógica de pesquisa aqui
+    console.log('Realizando pesquisa com o termo:', termoPesquisa);
   };
 
   return (
@@ -88,6 +103,8 @@ export default function SearchAppBar() {
             <StyledInputBase
               placeholder="Search…"
               inputProps={{ 'aria-label': 'search' }}
+              value={searchTerm}
+              onChange={handleSearch}
             />
           </Search>
         </Toolbar>
