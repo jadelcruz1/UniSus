@@ -40,7 +40,7 @@ const StyledInputBase = styled(InputBase)(({ theme }) => ({
   color: 'inherit',
   width: '100%',
   '& .MuiInputBase-input': {
-    padding: theme.spacing(1, 1, 1, 0), 
+    padding: theme.spacing(1, 1, 1, 0),
     paddingLeft: `calc(1em + ${theme.spacing(4)})`,
     transition: theme.transitions.create('width'),
     [theme.breakpoints.up('sm')]: {
@@ -55,9 +55,13 @@ const StyledInputBase = styled(InputBase)(({ theme }) => ({
 export default function SearchAppBar() {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
 
+  const handleMenuItemClick = () => {
+    setIsMenuOpen(false);
+  };
+
   return (
     <Box sx={{ flexGrow: 1 }}>
-      <AppBar position="static" sx={{ backgroundColor: '#92eea3' , color: '#151414'}}>
+      <AppBar position="static" sx={{ backgroundColor: '#92eea3', color: '#151414' }}>
         <Toolbar>
           <IconButton
             size="large"
@@ -94,31 +98,30 @@ export default function SearchAppBar() {
         onClose={() => setIsMenuOpen(false)}
       >
         <Box sx={{ width: 250 }}>
-        
-          <Link to="/" style={{ textDecoration: 'none', color: 'inherit' }}>
+          <Link to="/" style={{ textDecoration: 'none', color: 'inherit' }} onClick={handleMenuItemClick}>
             <Typography variant="h6" sx={{ p: 2 }}>
-           Home
+              Home
             </Typography>
           </Link>
-          <Link to="/cadastro" style={{ textDecoration: 'none', color: 'inherit' }}>
+          <Link to="/cadastro" style={{ textDecoration: 'none', color: 'inherit' }} onClick={handleMenuItemClick}>
             <Typography variant="h6" sx={{ p: 2 }}>
-            Cadastro Paciente
+              Cadastro Paciente
             </Typography>
           </Link>
-          <Link to="/CadastroMedico" style={{ textDecoration: 'none', color: 'inherit' }}>
+          <Link to="/CadastroMedico" style={{ textDecoration: 'none', color: 'inherit' }} onClick={handleMenuItemClick}>
             <Typography variant="h6" sx={{ p: 2 }}>
               Cadastro Médicos
             </Typography>
           </Link>
-          <Link to="/profile" style={{ textDecoration: 'none', color: 'inherit' }}>
+          <Link to="/profile" style={{ textDecoration: 'none', color: 'inherit' }} onClick={handleMenuItemClick}>
             <Typography variant="h6" sx={{ p: 2 }}>
-            Usuários Cadastrados
+              Usuários Cadastrados
             </Typography>
-           <Link to="/medicosCadastrados" style={{ textDecoration: 'none', color: 'inherit' }}>
+          </Link>
+          <Link to="/medicosCadastrados" style={{ textDecoration: 'none', color: 'inherit' }} onClick={handleMenuItemClick}>
             <Typography variant="h6" sx={{ p: 2 }}>
-            Médicos Cadastradoss
-           </Typography>
-          </Link>  
+              Médicos Cadastrados
+            </Typography>
           </Link>
         </Box>
       </Drawer>
