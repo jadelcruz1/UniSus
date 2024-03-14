@@ -1,0 +1,10 @@
+/* Dashboard.css */
+.dashboard-container {
+  background-image: url('../img/medica.avif');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  width: 300vh;
+ 
+}

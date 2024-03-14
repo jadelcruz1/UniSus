@@ -1,0 +1,35 @@
+.sidebar {
+    background-color: #f4f4f4;
+    width: 200px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .sidebar-logo {
+    margin-bottom: 20px;
+  }
+  
+  .sidebar-logo a {
+    color: #333;
+    text-decoration: none;
+    font-size: 1.2rem;
+  }
+  
+  .sidebar-nav ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .sidebar-nav ul li {
+    margin-bottom: 10px;
+  }
+  
+  .sidebar-link {
+    color: #333;
+    text-decoration: none;
+  }
+  
+  .sidebar-link:hover {
+    text-decoration: underline;
+  }
+  
