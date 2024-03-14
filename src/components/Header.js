@@ -16,8 +16,12 @@ const Header = () => {
               <Link to="/">Dashboard</Link>
             </li>
             <li>
+              <Link to="/cadastro">Cadastro Paciente</Link>
+            </li>
+            <li>
               <Link to="/profile">Perfil</Link>
             </li>
+           
             {/* Adicione outros itens de menu conforme necessário */}
           </ul>
         </nav>
