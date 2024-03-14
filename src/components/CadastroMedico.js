@@ -35,7 +35,7 @@ const CadastroMedico = ({ onSubmit }) => {
     setFoto('');
   };
 
-  const handleCadastroMedico = () => {
+  const handleSelectAllClick = () => {
     const novoCadastro = {
       nome,
       especialidade,
@@ -145,7 +145,7 @@ const CadastroMedico = ({ onSubmit }) => {
               variant="contained"
               color="secondary"
               type="button"
-              onClick={handleCadastroMedico}
+              onClick={handleSelectAllClick}
               style={{ backgroundColor: '#92eea3', color: '#151414' }}
             >
               Cadastrar
