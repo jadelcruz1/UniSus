@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Box, TextField, Button, Typography, Grid } from '@mui/material';
+import { Box, TextField, Button, Typography, Grid, FormControl, InputLabel, Select, MenuItem } from '@mui/material';
 
 const Cadastro = ({ onSubmit }) => {
   const [nome, setNome] = useState('');
@@ -44,7 +44,7 @@ const Cadastro = ({ onSubmit }) => {
         <Grid container spacing={2}>
           <Grid item xs={6}>
             <TextField
-              label="Nome"
+              label="Nome Completo"
               variant="outlined"
               fullWidth
               value={nome}
@@ -72,7 +72,7 @@ const Cadastro = ({ onSubmit }) => {
           </Grid>
           <Grid item xs={6}>
             <TextField
-              label="Telefone"
+              label="ex: 031 9 xxxx-xxxx"
               variant="outlined"
               fullWidth
               value={telefone}
@@ -80,13 +80,18 @@ const Cadastro = ({ onSubmit }) => {
             />
           </Grid>
           <Grid item xs={6}>
-            <TextField
-              label="WhatsApp"
-              variant="outlined"
-              fullWidth
-              value={whatsapp}
-              onChange={(event) => setWhatsApp(event.target.value)}
-            />
+            <FormControl fullWidth variant="outlined">
+              <InputLabel id="whatsapp-label">WhatsApp</InputLabel>
+              <Select
+                labelId="whatsapp-label"
+                value={whatsapp}
+                onChange={(event) => setWhatsApp(event.target.value)}
+                label="WhatsApp"
+              >
+                <MenuItem value="Sim">Sim</MenuItem>
+                <MenuItem value="Não">Não</MenuItem>
+              </Select>
+            </FormControl>
           </Grid>
           <Grid item xs={6}>
             <TextField
